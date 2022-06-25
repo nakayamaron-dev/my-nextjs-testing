@@ -1,11 +1,17 @@
 import Layout from '../components/Layout'
+import { StateProvider } from '../context/StateProvider'
+import ContextA from '../components/ContextA'
+import ContextB from '../components/ContextB'
 
-const CntextPage: React.FC = () => {
+const ContextPage: React.FC = () => {
   return (
-    <Layout title="Comment">
-      <p className="text-4xl">context page</p>
+    <Layout title="Context">
+      <p className="text-4xl mb-10">context page</p>
+      <StateProvider>
+        <ContextA />
+        <ContextB />
+      </StateProvider>
     </Layout>
   )
 }
-
-export default CntextPage
+export default ContextPage
