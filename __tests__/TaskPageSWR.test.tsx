@@ -92,6 +92,6 @@ describe(`Todos page / useSWR`, () => {
         <TaskPage staticTasks={staticProps} />
       </SWRConfig>
     )
-    expect(await screen.findByText('Eror!')).toBeInTheDocument()
+    expect(await screen.findByText('Error!')).toBeInTheDocument()
   })
 })
